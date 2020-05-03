@@ -6,25 +6,28 @@ const totalView = document.getElementById("total");
 const dropdown = document.getElementsByClassName('dropdown');
 
 var countProducts = 0;
-var totalOrders = 0.00;
+var totalOrders = 0; 
 
-if(productOrders.innerText == '') {
+if(productOrders.innerText == '') {// If not exist products in cart show..
 	dropdown[0].children[0].innerHTML = 'Empty';
 }
-	
-function comprar() {
-	countProducts += 1;
-	totalOrders += Number(valueProduct);
 
-	if(countProducts > 0) {
+// Function Buy with Views Products 
+function comprar() {
+	countProducts += 1; // Total of Orders
+	totalOrders += Number(valueProduct); // Total Value Products
+
+	if(countProducts > 0) { // If exist products in cart show..
 		dropdown[0].children[0].innerHTML = 'Your cart lines:';	
 	}
-	cart.innerHTML = `<p>Carrinho: <span>${countProducts}</span></p>`;
-	productOrders.innerHTML += `<p>${countProducts}. ${nameProduct}</p>`
-	totalView.innerText = `Total: R$${totalOrders}`;
+
+
+	cart.innerHTML = `<p>Carrinho: <span>${countProducts}</span></p>`; // View Orders
+	productOrders.innerHTML += `<p>${countProducts}. ${nameProduct}</p>`; // View Products and index
+	totalView.innerText = `Total: R$${totalOrders}`; // View Total value products
 }
 
-cart.addEventListener('click', () => {
+cart.addEventListener('click', () => { // Function Dropdown Show and Hidden
 	dropdown[0].classList.toggle('toggle');
 });
 
