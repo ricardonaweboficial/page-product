@@ -1,113 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ecommerce Simple</title>
-	<link rel="stylesheet" href="styles.css" />
+	<title>Page Product</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
-	<header>
-		<div class="nav-container">
-			<ul>
-				<li>Home</li>
-				<li>About</li>
-				<li>Contact</li>
-			</ul>
-			<h1 id="cart">Carrinho</h1>
-			<div class="dropdown">
-				<h1>Your cart lines:</h1>
-				<div id="product-orders">
-					
+	<div class="product-container">
+		<div class="content">
+			<section>
+				<i class="fas fa-bars" style="color:white"></i>
+				<div class="product">
+					<img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246__340.jpg" alt="Product">
+					<div class="info-product">
+						<h1>Hamburguer X-Tudo</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>	
+					</div>
 				</div>
-				<p id="total"></p>
-			</div>
+				<big>HAMBURGUER X-TUDO</big>
+			</section>	
+			<article>
+				<div class="icons">
+					<i class="fas fa-search"></i>
+					<i class="fas fa-shopping-cart"></i>
+					<i class="far fa-heart"></i>
+				</div>
+				<h1>Hamburguer X-Tudo</h1>
+				<h3>Preço: <span><small>R$</small>20,00</span></h3>
+				<div class="box-amount">
+					<h2>Quantidade</h2>
+					<div class="amount">
+						<i class="fas fa-chevron-left"></i>
+						<p>2</p>
+						<i class="fas fa-chevron-right"></i>
+					</div>
+				</div>
+				<div class="total">
+					<h2>Total:</h2>
+					<span><small>R$</small> 40,00</span>
+				</div>
+				<button>ADICIONAR NO CARRINHO <i class="fas fa-shopping-cart"></i></button>
+			</article>
 		</div>
-	</header>
-	<section>
-		<div class="products-container">
-			<div class="product">
-				<div class="photo">
-					<img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246__340.jpg" alt="food" SameSite='None'>
-				</div>
-				<div class="info-product">
-					<h1 id="name-product">Hamburguer X-Tudo</h1>
-					<div class="description">
-						<p>Lorem ipsum in ts lestip mas enLorem ipsum in ts lestip mas ents lestip mas <en></en></p>
-						<div class="price-buy">
-							<h2 id="value">R$10,00</h2>
-							<button onclick="comprar()">Buy <span>+</span></button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="product">
-				<div class="photo">
-					<img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246__340.jpg" alt="">
-				</div>
-				<div class="info-product">
-					<h1 id="name-product">Hamburguer X-Tudo</h1>
-					<div class="description">
-						<p>Lorem ipsum in ts lestip mas enLorem ipsum in ts lestip mas ents lestip mas <en></en></p>
-						<div class="price-buy">
-							<h2>R$10,00</h2>
-							<button onclick="comprar()">Buy <span>+</span></button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="product">
-				<div class="photo">
-					<img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246__340.jpg" alt="">
-				</div>
-				<div class="info-product">
-					<h1 id="name-product">Hamburguer X-Tudo</h1>
-					<div class="description">
-						<p>Lorem ipsum in ts lestip mas enLorem ipsum in ts lestip mas ents lestip mas <en></en></p>
-						<div class="price-buy">
-							<h2>R$10,00</h2>
-							<button onclick="comprar()">Buy <span>+</span></button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="product">
-				<div class="photo">
-					<img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246__340.jpg" alt="">
-				</div>
-				<div class="info-product">
-					<h1 id="name-product">Hamburguer X-Tudo</h1>
-					<div class="description">
-						<p>Lorem ipsum in ts lestip mas enLorem ipsum in ts lestip mas ents lestip mas <en></en></p>
-						<div class="price-buy">
-							<h2>R$10,00</h2>
-							<button onclick="comprar()">Buy <span>+</span></button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="product">
-				<div class="photo">
-					<img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246__340.jpg" alt="">
-				</div>
-				<div class="info-product">
-					<h1 id="name-product">Hamburguer X-Tudo</h1>
-					<div class="description">
-						<p>Lorem ipsum in ts lestip mas enLorem ipsum in ts lestip mas ents lestip mas <en></en></p>
-						<div class="price-buy">
-							<h2>R$10,00</h2>
-							<button onclick="comprar()">Buy <span>+</span></button>
-						</div>
-					</div>
-				</div>
-			</div>
+	</div>
 
-		</div>	
-	</section>
-		
-	<footer>
-		<div class="user-info-container">
-			
-		</div>
-	</footer>
 	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 </body>
 </html>
