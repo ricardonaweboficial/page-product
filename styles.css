@@ -38,8 +38,6 @@ button {
 .product-container .content {
 	background:#252525;
 	display:flex;
-	justify-content:space-around;
-	align-items:center;
 	z-index:0;
 }
 
@@ -65,7 +63,16 @@ section:before {
 	background-size:100% 100%;
 	z-index:-1;
 	filter:blur(5px) brightness(0.2);
+	
+}
 
+section big {
+	text-align:center;
+	font-size:40px;
+	font-weight: bold;
+	z-index:-1;
+	color:rgba(190,190,190,0.5);
+	transform:scale(1,1.2);
 }
 
 section .product {
@@ -79,6 +86,11 @@ section .product {
 section .product img {
 	width:100%;
 	clip-path: polygon(0 100%, 0 0, 100% 0, 100% 80%);
+	transition: 0.2s;
+}
+
+section .product img:hover {
+	clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);	
 }
 
 section .product .info-product {
@@ -86,10 +98,116 @@ section .product .info-product {
 }
 
 section .product .info-product h1 {
-	margin-bottom:10px;	
+	margin-bottom:10px;
+	font-size:30px;
 }
 
 section .product .info-product p {
 	color:#afafaf;
+	word-spacing:0.2em;
+	font-weight: 500;
+	font-size:20px;
+}
+
+article {
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	color:#fff;
+	margin:40px 20px;
+}
+
+article .icons {
+	display:flex;
+	justify-content:space-around;
+}
+
+article h1 {
+	position:relative;
+	font-size:30px;
+}
+
+article h1:hover:before {
+	width:95%;
+}
+
+article h1:before {
+	content: "";
+	position:absolute;
+	bottom:-5px;
+	left:0;
+	width:0%;
+	height:3px;
+	border-radius:5px;
+	background:#f1f1f1;
+	transition:0.2s;
+}
+
+article h3 small {
+	font-size:12px;
+	margin-right:5px;
+}
+
+article h3 span {
+	font-size:30px;
+	color:#ff8686;
+	position:relative;
+	border-bottom:3px solid #ff8686;
+}
+
+article .box-amount {
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+}
+
+article .box-amount h3 {
+	margin-right:6px;
+}
+
+
+article .box-amount .amount {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	background:white;
+	padding:5px;
+	border-radius:5px;
+	color:#f1f1f1;
+}
+
+article .box-amount .amount p {
+	margin:0 20px;
+	color:#333;
+	font-weight:bold;
+}
+
+article .total {
+	display:flex;
+	align-items:center;
+}
+
+article .total h3 {
+	margin-right:5px;
+}
+
+article .total span {
+	background:#ff8686;
+	color:#f1f1f1;
+	padding:8px 20px;
+	border-radius:4px;
+	font-weight:bold;
+}
+
+article button {
+	padding:10px;
+	background:white;
+	border:none;
+	border-radius:4px;
+	font-size:15px;
+	font-weight:bold;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
 }
 
